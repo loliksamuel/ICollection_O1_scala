@@ -1,8 +1,8 @@
 
-object mainApp extends App {
+object MainApp  {
 
-  mainApp.main(List("s"))
-  def main (args: List[String])={
+
+  def main (args: Array[String]): Unit={
 
 
     //implement data structure that support setAll in O(1)
@@ -23,6 +23,8 @@ object mainApp extends App {
     myds.setAll(100.0)
     println("0-"+myds.get(0))
     println("1-"+myds.get(1))
+
+    Thread.sleep(10)
 
     myds.set(0,12.0)
     println("0-"+myds.get(0))
